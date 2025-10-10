@@ -1,0 +1,22 @@
+:root {
+  --color-brand: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-bg: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #475569;
+
+  --font-sans: ui-sans-serif, system-ui, Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  --size-xs: .75rem; --size-sm: .875rem; --size-base: 1rem; --size-lg: 1.125rem; --size-xl: 1.25rem;
+
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-6: 1.5rem; --radius: 14px;
+
+  --card-bg: #f8fafc; --card-border: #e2e8f0; --link: var(--color-brand);
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #0b1220;
+  --color-text: #e5e7eb;
+  --card-bg: #0f172a;
+  --card-border: #1f2937;
+  --link: #38bdf8;
+}
