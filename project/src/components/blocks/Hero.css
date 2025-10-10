@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(139, 21, 56, 0.95) 0%, rgba(78, 12, 31, 0.9) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo-container {
+  margin-bottom: var(--space-6);
+}
+
+.hero-logo {
+  height: 120px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.hero-heading {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gold-400);
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subheading {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: var(--space-3);
+  line-height: var(--line-height-tight);
+}
+
+.hero-description {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-6);
+  line-height: var(--line-height-relaxed);
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-gold-400);
+  color: var(--color-primary-900);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-cta:hover {
+  background-color: var(--color-gold-500);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+  color: var(--color-primary-900);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-logo {
+    height: 90px;
+  }
+
+  .hero-heading {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero-subheading {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero-description {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-cta {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-base);
+  }
+}
