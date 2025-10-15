@@ -1,4 +1,4 @@
-Node + Vite (React) + Bolt Database (Postgres) Starter
+Node + Vite (React) + Bolt Database Starter
 ======================================================
 
 This starter gives you:
