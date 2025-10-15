@@ -20,7 +20,7 @@ export default function FormCTA({ data }) {
         <div className="form-cta-content">
           <div className="form-cta-logo-container">
             <img
-              src="/AI Global Experts Logo Design.png"
+              src="/AI-GE logo.svg"
               alt="AI Global Experts"
               className="form-cta-logo"
             />

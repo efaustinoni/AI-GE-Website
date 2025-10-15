@@ -15,7 +15,7 @@ export default function Header() {
           aria-label="Go to homepage"
         >
           <img
-            src="/AI Global Experts Logo Design.png"
+            src="/AI-GE logo.svg"
             alt="AI Global Experts"
             className="logo"
           />

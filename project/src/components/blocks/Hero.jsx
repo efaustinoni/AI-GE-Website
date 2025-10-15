@@ -21,7 +21,7 @@ export default function Hero({ data }) {
           <div className="hero-content">
             <div className="hero-logo-container">
               <img
-                src="/AI Global Experts Logo Design.png"
+                src="/AI-GE logo.svg"
                 alt="AI Global Experts"
                 className="hero-logo"
               />
