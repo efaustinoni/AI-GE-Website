@@ -18,14 +18,16 @@ export default function FormCTA({ data }) {
     <section className="form-cta section" id={formType}>
       <div className="container">
         <div className="form-cta-content">
-          <div className="form-cta-logo-container">
-            <img
-              src="/AI-GE logo.svg"
-              alt="AI Global Experts"
-              className="form-cta-logo"
-            />
+          <div className="form-cta-header-row">
+            <div className="form-cta-logo-container">
+              <img
+                src="/AI-GE-logo-branded.svg"
+                alt="AI Global Experts"
+                className="form-cta-logo"
+              />
+            </div>
+            {heading && <h2 className="form-cta-heading">{heading}</h2>}
           </div>
-          {heading && <h2 className="form-cta-heading">{heading}</h2>}
           {description && <p className="form-cta-description">{description}</p>}
           {ctaText && (
             <button onClick={handleClick} className="form-cta-button">

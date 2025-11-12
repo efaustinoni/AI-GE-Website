@@ -10,7 +10,7 @@
 .richtext-heading {
   text-align: center;
   margin-bottom: var(--space-6);
-  color: var(--color-gold-500);
+  color: var(--brand-bordo);
 }
 
 .richtext-body {
@@ -34,7 +34,7 @@
 
 .richtext-body h3 {
   font-size: var(--font-size-2xl);
-  color: var(--color-gold-600);
+  color: var(--brand-bordo);
   margin-top: var(--space-6);
   margin-bottom: var(--space-4);
 }
@@ -51,7 +51,7 @@
 }
 
 .richtext-body li strong {
-  color: var(--color-primary-600);
+  color: var(--brand-bordo);
   font-size: var(--font-size-lg);
 }
 

@@ -38,7 +38,7 @@
 .back-link {
   background: none;
   border: none;
-  color: var(--color-primary-600);
+  color: var(--brand-bordo);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   cursor: pointer;
@@ -48,8 +48,8 @@
 }
 
 .back-link:hover {
-  background-color: var(--color-primary-50);
-  color: var(--color-primary-700);
+  background-color: var(--brand-bordo-100);
+  color: var(--brand-bordo-700);
 }
 
 @media (max-width: 768px) {

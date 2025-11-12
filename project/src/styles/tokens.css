@@ -1,27 +1,30 @@
 :root {
-  /* Color System - Burgundy Red */
-  --color-primary-50: #fef2f2;
-  --color-primary-100: #fde8e8;
-  --color-primary-200: #fbd5d5;
-  --color-primary-300: #f8b4b4;
-  --color-primary-400: #f47676;
-  --color-primary-500: #8B1538;
-  --color-primary-600: #7A1230;
-  --color-primary-700: #640F27;
-  --color-primary-800: #4E0C1F;
-  --color-primary-900: #3D0918;
+  /* Brand colors */
+  --brand-bordo: #6E0F1A;
+  --brand-bordo-700: #4D0B13;
+  --brand-bordo-600: #5E0D17;
+  --brand-bordo-300: #A61A2A;
+  --brand-bordo-100: #F6E9EB;
 
-  /* Gold Accent */
-  --color-gold-50: #fefce8;
-  --color-gold-100: #fef9c3;
-  --color-gold-200: #fef08a;
-  --color-gold-300: #fde047;
-  --color-gold-400: #D4AF37;
-  --color-gold-500: #B8960F;
-  --color-gold-600: #997A00;
-  --color-gold-700: #7A5F00;
-  --color-gold-800: #5C4700;
-  --color-gold-900: #3D2F00;
+  --brand-gold: #C7A200;
+  --brand-gold-700: #8A7200;
+  --brand-gold-600: #A68900;
+  --brand-gold-200: #F4E7B0;
+
+  /* Color System - Mapped to brand colors */
+  --color-primary-100: #F6E9EB;
+  --color-primary-300: #A61A2A;
+  --color-primary-500: #6E0F1A;
+  --color-primary-600: #5E0D17;
+  --color-primary-700: #4D0B13;
+  --color-primary-900: #4D0B13;
+
+  /* Gold Accent - Mapped to brand gold */
+  --color-gold-200: #F4E7B0;
+  --color-gold-400: #C7A200;
+  --color-gold-500: #C7A200;
+  --color-gold-600: #A68900;
+  --color-gold-700: #8A7200;
 
   --color-neutral-50: #f8f9fa;
   --color-neutral-100: #e9ecef;
@@ -40,7 +43,7 @@
   --color-error-600: #c82333;
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: "Lucida Sans", "Lucida Grande", "Trebuchet MS", sans-serif;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;

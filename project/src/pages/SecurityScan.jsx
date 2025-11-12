@@ -61,7 +61,7 @@ export default function SecurityScan() {
       });
     } catch (err) {
       console.error('Error submitting form:', err);
-      setError('Er is een fout opgetreden. Probeer het later opnieuw.');
+      setError('An error occurred. Please try again later.');
     } finally {
       setSubmitting(false);
     }
@@ -74,28 +74,28 @@ export default function SecurityScan() {
         <div className="form-container">
 
         <div className="form-header">
-          <h1>AI Tool Security Scan Aanvraag</h1>
+          <h1>AI Tool Security Scan Request</h1>
           <p>
-            Vraag een uitgebreide security scan aan van uw AI tool. Onze experts analyseren
-            uw systeem en geven gedetailleerde aanbevelingen.
+            Request a comprehensive security scan of your AI tool. Our experts will analyze
+            your system and provide detailed recommendations.
           </p>
         </div>
 
         {success ? (
           <div className="success-message">
-            <h2>Aanvraag Ontvangen!</h2>
+            <h2>Request Received!</h2>
             <p>
-              Bedankt voor uw aanvraag. We nemen binnen 24 uur contact met u op om de
-              security scan te bespreken.
+              Thank you for your request. We will contact you within 24 hours to
+              discuss the security scan.
             </p>
             <button onClick={() => navigate('/')} className="button-primary">
-              Terug naar Home
+              Back to Home
             </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
-              <label htmlFor="name">Naam *</label>
+              <label htmlFor="name">Name *</label>
               <input
                 type="text"
                 id="name"
@@ -119,7 +119,7 @@ export default function SecurityScan() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="company">Bedrijf</label>
+              <label htmlFor="company">Company</label>
               <input
                 type="text"
                 id="company"
@@ -130,7 +130,7 @@ export default function SecurityScan() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="phone">Telefoonnummer</label>
+              <label htmlFor="phone">Phone Number</label>
               <input
                 type="tel"
                 id="phone"
@@ -141,14 +141,14 @@ export default function SecurityScan() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="tool_name">AI Tool Naam *</label>
+              <label htmlFor="tool_name">AI Tool Name *</label>
               <input
                 type="text"
                 id="tool_name"
                 name="tool_name"
                 value={formData.tool_name}
                 onChange={handleChange}
-                placeholder="Bijvoorbeeld: ChatGPT, Custom AI Tool, etc."
+                placeholder="For example: ChatGPT, Custom AI Tool, etc."
                 required
               />
             </div>
@@ -166,14 +166,14 @@ export default function SecurityScan() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">Aanvullende Informatie</label>
+              <label htmlFor="message">Additional Information</label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Beschrijf eventuele specifieke zorgen of vragen..."
+                placeholder="Describe any specific concerns or questions..."
               ></textarea>
             </div>
 
@@ -184,7 +184,7 @@ export default function SecurityScan() {
               className="button-primary"
               disabled={submitting}
             >
-              {submitting ? 'Verzenden...' : 'Aanvraag Indienen'}
+              {submitting ? 'Submitting...' : 'Submit Request'}
             </button>
           </form>
         )}

@@ -19,14 +19,16 @@ export default function Hero({ data }) {
       <div className="hero-overlay">
         <div className="container">
           <div className="hero-content">
-            <div className="hero-logo-container">
-              <img
-                src="/AI-GE logo.svg"
-                alt="AI Global Experts"
-                className="hero-logo"
-              />
+            <div className="hero-header-row">
+              <div className="hero-logo-container">
+                <img
+                  src="/AI-GE-logo-branded.svg"
+                  alt="AI Global Experts"
+                  className="hero-logo"
+                />
+              </div>
+              {heading && <h1 className="hero-heading">{heading}</h1>}
             </div>
-            {heading && <h1 className="hero-heading">{heading}</h1>}
             {subheading && <p className="hero-subheading">{subheading}</p>}
             {description && <p className="hero-description">{description}</p>}
             {ctaText && ctaLink && (

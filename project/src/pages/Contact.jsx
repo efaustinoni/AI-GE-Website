@@ -55,7 +55,7 @@ export default function Contact() {
       });
     } catch (err) {
       console.error('Error submitting form:', err);
-      setError('Er is een fout opgetreden. Probeer het later opnieuw.');
+      setError('An error occurred. Please try again later.');
     } finally {
       setSubmitting(false);
     }
@@ -69,21 +69,21 @@ export default function Contact() {
 
         <div className="form-header">
           <h1>Contact</h1>
-          <p>Neem contact met ons op voor vragen of een vrijblijvend gesprek.</p>
+          <p>Contact us for questions or a non-committal conversation.</p>
         </div>
 
         {success ? (
           <div className="success-message">
-            <h2>Bedankt voor uw bericht!</h2>
-            <p>We nemen zo spoedig mogelijk contact met u op.</p>
+            <h2>Thank You for Your Message!</h2>
+            <p>We will contact you as soon as possible.</p>
             <button onClick={() => navigate('/')} className="button-primary">
-              Terug naar Home
+              Back to Home
             </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
-              <label htmlFor="name">Naam *</label>
+              <label htmlFor="name">Name *</label>
               <input
                 type="text"
                 id="name"
@@ -107,7 +107,7 @@ export default function Contact() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="company">Bedrijf</label>
+              <label htmlFor="company">Company</label>
               <input
                 type="text"
                 id="company"
@@ -118,7 +118,7 @@ export default function Contact() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="phone">Telefoonnummer</label>
+              <label htmlFor="phone">Phone Number</label>
               <input
                 type="tel"
                 id="phone"
@@ -129,7 +129,7 @@ export default function Contact() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">Bericht</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -146,7 +146,7 @@ export default function Contact() {
               className="button-primary"
               disabled={submitting}
             >
-              {submitting ? 'Verzenden...' : 'Verstuur Bericht'}
+              {submitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         )}
